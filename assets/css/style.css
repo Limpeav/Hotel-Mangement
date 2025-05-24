@@ -1,0 +1,71 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+}
+nav a {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    flex: 1 1 140px;
+    text-align: center;
+    user-select: none;
+}
+nav a:hover,
+nav a:focus {
+    background: #fff;
+    color: #764ba2;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(118, 75, 162, 0.5);
+    outline: none;
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        padding: 15px 20px;
+        font-size: 1rem;
+        flex: 1 1 100%;
+    }
+}
